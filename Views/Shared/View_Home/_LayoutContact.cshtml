@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Styles/StylesHome.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/Home/Home"><img class="logo" src="~/Content/hinh/logo_fly.png" /></a>
+        <ul>
+            <li><a href="/Home/AboutUs">About Us</a></li>
+            <li><a href="/Home/Contact">Contact</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="/Login/Login">Account</a></li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

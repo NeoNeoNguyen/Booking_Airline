@@ -1,0 +1,131 @@
+﻿
+.navbar{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:100px;
+    cursor:pointer;
+}
+
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+    position:relative;
+}
+
+.navbar ul li a{ 
+    text-decoration:none;
+    color:rgba(0,0,0,0.75);
+    text-transform:uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background:#4800ff;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.2s;
+}
+
+.navbar ul li:hover:after{
+    width:100%;
+}
+
+
+
+.bg-cp {
+    background-color: #d3d6db;
+}
+
+.fs-7 {
+    font-size: 15px;
+}
+
+.fs-8 {
+    font-size: 13px;
+}
+
+
+/*------------------------------footer----------------------------------*/
+    .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .footer .box-container .box {
+        margin-left: 50px;
+    }
+        .footer .box-container .box h3 {
+            font-size: 14px;
+            color: var(--black);
+            padding: 1rem 0;
+        }
+    .footer .box-container .box h3 {
+            font-size: 14px;
+            color: var(--black);
+            padding: 1rem 0;
+        }    
+
+    .footer .box-container .box a {
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        color: var(--light-color);
+        padding: 1rem 0;
+    }            
+
+            .footer .box-container .box a i {
+                color: var(--green);
+                padding-right: .5rem;
+            }
+
+            .footer .box-container .box a:hover i {
+                padding-right: 2rem;
+            }
+
+        .footer .box-container .box .map {
+            width: 100%;
+        }
+
+.footer .share {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+    .footer .share a {
+        text-decoration: none;
+        height: 14px;
+        width: 14px;
+        line-height: 5rem;
+        font-size: 14px;
+        color: #fff;
+        background: #219150;
+        margin: 0 .3rem;
+        border-radius: 50%;
+    }
+
+        .footer .share a:hover {
+            background: var(--black);
+        }
+
+.footer .credit {
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 14px;
+    color: var(--light-color);
+    text-align: center;
+}
+
